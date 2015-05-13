@@ -13,6 +13,8 @@
 		42107FFF1B035FB000575238 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42107FFE1B035FB000575238 /* Images.xcassets */; };
 		421080021B035FB000575238 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421080001B035FB000575238 /* LaunchScreen.xib */; };
 		4210800E1B035FB000575238 /* ButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210800D1B035FB000575238 /* ButtonTests.swift */; };
+		4210801E1B037EFF00575238 /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210801B1B037EFF00575238 /* KAProgressLabel.m */; };
+		4210801F1B037EFF00575238 /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210801D1B037EFF00575238 /* TPPropertyAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,11 @@
 		421080071B035FB000575238 /* ButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4210800C1B035FB000575238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4210800D1B035FB000575238 /* ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTests.swift; sourceTree = "<group>"; };
+		421080191B037EFE00575238 /* Button-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Button-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		4210801A1B037EFF00575238 /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAProgressLabel.h; sourceTree = "<group>"; };
+		4210801B1B037EFF00575238 /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAProgressLabel.m; sourceTree = "<group>"; };
+		4210801C1B037EFF00575238 /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPropertyAnimation.h; sourceTree = "<group>"; };
+		4210801D1B037EFF00575238 /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPropertyAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,7 @@
 		42107FE91B035FB000575238 = {
 			isa = PBXGroup;
 			children = (
+				421080181B037EB800575238 /* New Group */,
 				42107FF41B035FB000575238 /* Button */,
 				4210800A1B035FB000575238 /* ButtonTests */,
 				42107FF31B035FB000575238 /* Products */,
@@ -82,6 +90,7 @@
 				42107FFB1B035FB000575238 /* Main.storyboard */,
 				42107FFE1B035FB000575238 /* Images.xcassets */,
 				421080001B035FB000575238 /* LaunchScreen.xib */,
+				421080191B037EFE00575238 /* Button-Bridging-Header.h */,
 				42107FF51B035FB000575238 /* Supporting Files */,
 			);
 			path = Button;
@@ -110,6 +119,17 @@
 				4210800C1B035FB000575238 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		421080181B037EB800575238 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4210801A1B037EFF00575238 /* KAProgressLabel.h */,
+				4210801B1B037EFF00575238 /* KAProgressLabel.m */,
+				4210801C1B037EFF00575238 /* TPPropertyAnimation.h */,
+				4210801D1B037EFF00575238 /* TPPropertyAnimation.m */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				42107FFA1B035FB000575238 /* ViewController.swift in Sources */,
+				4210801F1B037EFF00575238 /* TPPropertyAnimation.m in Sources */,
 				42107FF81B035FB000575238 /* AppDelegate.swift in Sources */,
+				4210801E1B037EFF00575238 /* KAProgressLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Button/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Button-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Button/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Button-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +432,7 @@
 				421080131B035FB000575238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421080141B035FB000575238 /* Build configuration list for PBXNativeTarget "ButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +441,7 @@
 				421080161B035FB000575238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

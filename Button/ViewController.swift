@@ -15,16 +15,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnC: UIButton!
     @IBOutlet weak var btnD: UIButton!
     
+    var animationLabel: KAProgressLabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
 
         self.view.bringSubviewToFront(self.btnA)
-        
-        
         self.btnA.layer.cornerRadius = self.btnA.frame.width/2
         
+        
+        // configure KAProgress Label
+        self.animationLabel = KAProgressLabel(frame: CGRect(x: 50, y: 50, width: 70, height: 70))
+        self.animationLabel?.progressColor = UIColor.redColor()
+        //self.animationLabel?.trackColor = UIColor.clearColor()
+
+        self.animationLabel?.progressWidth = 3.0
+        self.animationLabel?.trackWidth = 3.0
+        
+        self.view.addSubview(animationLabel!)
 
     }
     
@@ -59,9 +69,11 @@ class ViewController: UIViewController {
     @IBAction func click(sender: UIButton) {
         
         self.animationA()
-
         
         
+        self.animationLabel!.setProgress(0.7, timing: TPPropertyAnimationTimingEaseOut, duration: 0.5, delay: 0.0)
+        
+        self.animationLabel?.text = "40"
     }
     
     

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A53F2F56-B6AE-4C77-BA66-597F06D84D5E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Button</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EBC78B132152454D97A54B7956D3ABDC5179D372</key>
+		<string>https://github.com/mmohsin991/Buttons-Animation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Button.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EBC78B132152454D97A54B7956D3ABDC5179D372</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mmohsin991/Buttons-Animation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EBC78B132152454D97A54B7956D3ABDC5179D372</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EBC78B132152454D97A54B7956D3ABDC5179D372</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Buttons%20Animation</string>
+		</dict>
+	</array>
+</dict>
+</plist>
